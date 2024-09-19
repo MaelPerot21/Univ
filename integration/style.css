@@ -64,3 +64,15 @@ body {
     background: transparent url('img/Groupe 14.png') 0% 0% no-repeat padding-box;
     opacity: 1;
 }
+
+.spacing_buttons_rectangle {
+    /* Layout Properties */
+    top: -1px;
+    left: 9px;
+    width: 1003px;
+    height: 20px;
+
+    /* UI Properties */
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
