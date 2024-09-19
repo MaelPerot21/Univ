@@ -1,0 +1,66 @@
+body {
+    background-color: white;
+}
+
+.welcome_image {
+    /* Layout Properties */
+    top: 19px;
+    left: 20px;
+    width: 1326px;
+    height: 749px;
+
+    /* UI Properties */
+    background: transparent url('img/slider1.png') 0% 0% no-repeat padding-box;
+    opacity: 0;
+}
+
+.top_right_buttons {
+    /* Layout Properties */
+    top: -9.787109375px;
+    left: 1001px;
+    width: 361px;
+    height: 60px;
+
+    /* UI Properties */
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+.candidate_space {
+    /* Layout Properties */
+    top: 20px;
+    left: 1049px;
+    width: 103px;
+    height: 12px;
+
+    /* UI Properties */
+    text-align: left;
+    font: normal normal normal 12px/18px ZonaPro-SemiBold;
+    letter-spacing: 0px;
+    color: #163174;
+    opacity: 1;
+}
+.help_contact {
+    /* Layout Properties */
+    top: 20px;
+    left: 1178px;
+    width: 93px;
+    height: 12px;
+
+    /* UI Properties */
+    text-align: left;
+    font: normal normal normal 12px/17px ZonaPro;
+    letter-spacing: 0px;
+    color: #707070;
+    opacity: 1;
+}
+.language {
+    /* Layout Properties */
+    top: 16px;
+    left: 1312px;
+    width: 20px;
+    height: 20px;
+
+    /* UI Properties */
+    background: transparent url('img/Groupe 14.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
