@@ -1,11 +1,7 @@
 package blog;
 
 public interface Publishable {
-	public long getPublicationDate() {
-		return this.AbstractPublishableItem.getpublicationDate();
-	}
+	public long getPublicationDate();
 	
-	public String getAuthor() {
-		return this.AbstractPublishedItem.getAuthor();
-	}
+	public String getAuthor();
 }
