@@ -1,10 +1,10 @@
 package gestionVille;
 
-public class Logement extends Bien{
+public abstract class Logement extends Bien{
     private int superficieAuSol, nbPersonnesLogees;
 
     public Logement() {
-        super(0, 0);
+        super();
 
         superficieAuSol = 0;
         nbPersonnesLogees = 0;
