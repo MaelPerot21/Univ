@@ -1,0 +1,11 @@
+#home-slider {
+    /* Layout Properties */
+    top: 19px;
+    left: 20px;
+    width: 1326px;
+    height: 749px;
+
+    /* UI Properties */
+    background: transparent url('../img/Groupe\ 57.svg') 0% 0% no-repeat padding-box;
+    opacity: 0;
+}

@@ -64,6 +64,18 @@ h2 {
 /* -----------------------------------------------------*/
 /* ------------------ HEADER ---------------------------*/
 /* -----------------------------------------------------*/
+header {
+    /* Layout Properties */
+    top: 19px;
+    left: 20px;
+    width: 1326px;
+    height: 749px;
+
+    /* UI Properties */
+    background: transparent url('img/GA6b.png') 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
 #top_menu {
     /* Layout Properties */
     top: 59px;
