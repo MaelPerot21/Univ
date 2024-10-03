@@ -1,0 +1,116 @@
+@font-face {
+    font-family: 'FrontageCondensedOutline';
+    src: url('../fonts/frontage-condensed-outline/FrontageCondensedOutline.eot');
+    src: url('../fonts/frontage-condensed-outline/FrontageCondensedOutline.eot') format('embedded-opentype'),
+    url('../fonts/frontage-condensed-outline/FrontageCondensedOutline.woff2') format('woff2'),
+    url('../fonts/frontage-condensed-outline/FrontageCondensedOutline.woff') format('woff'),
+    url('../fonts/frontage-condensed-outline/FrontageCondensedOutline.ttf') format('truetype'),
+    url('../fonts/frontage-condensed-outline/Froncontact tageCondensedOutline.svg#FrontageCondensedOutline') format('svg');
+}
+@font-face {
+    font-family: 'ZonaProBold';
+    src: url('../fonts/zona-pro/ZonaProBold.eot');
+    src: url('../fonts/zona-pro/ZonaProBold.eot') format('embedded-opentype'),
+    url('../fonts/zona-pro/ZonaProBold.woff2') format('woff2'),
+    url('../fonts/zona-pro/ZonaProBold.woff') format('woff'),
+    url('../fonts/zona-pro/ZonaProBold.ttf') format('truetype'),
+    url('../fonts/zona-pro/ZonaProBold.svg#ZonaPrcontact oBold') format('svg');
+}
+@font-face {
+    font-family: 'ZonaProExtraLight';
+    src: url('../fonts/zona-pro/ZonaProExtraLight.eot');
+    src: url('../fonts/zona-pro/ZonaProExtraLight.eot') format('embedded-opentype'),
+    url('../fonts/zona-pro/ZonaProExtraLight.woff2') format('woff2'),
+    url('../fonts/zona-pro/ZonaProExtraLight.woff') format('woff'),
+    url('../fonts/zona-pro/ZonaProExtraLight.ttf') format('truetype'),
+    url('../fonts/zona-pro/ZonaProExtraLight.svg#ZonaProExtraLight') format('svg');
+}
+
+
+:root {
+    --primary-color: rgba(15, 47, 120, 1);
+    --seconday-color: rgba(54, 160, 172, 1);
+    --black-color: rgba(0, 0, 0, 1);
+    --green-color: rgba(0, 90, 61, 1);
+    --grey-color: rgba(112, 112, 112, 1);
+    --grey-dark-color: rgba(90, 90, 90, 1);
+    --grey-light-color: rgba(242, 244, 247, 1);
+    --red-color: rgba(179, 67, 62, 1);
+    --blue-color: rgba(162, 182, 223, 1)
+}contact 
+
+body {
+    font-size: 16px;
+}
+
+
+h2 {
+    font-size: 2.5em;
+    font-family: 'ZonaProBold';
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.container {
+    max-width: 1246px;
+}
+
+/* -----------------------------------------------------*/
+/* ------------------ HEADER ---------------------------*/
+/* -----------------------------------------------------*/
+#top_menu {
+    /* Layout Properties */
+    top: 59px;
+    left: 63px;
+    width: 1240px;
+    height: 66px;
+
+    /* UI Properties */
+    text-align: center;
+    font: normal normal normal 42px/50px Helvetica Neue;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    opacity: 1;
+}
+
+#personal_menu {
+    /* Layout Properties */
+    top: 0px;
+    left: 1001px;
+    width: 361px;
+    height: 60px;
+
+    /* UI Properties */
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+/* -----------------------------------------------------*/
+/* ---------------- END HEADER -------------------------*/
+/* -----------------------------------------------------*/
+
+
+
+/* -----------------------------------------------------*/
+/* ----------------- Actualités ------------------------*/
+/* -----------------------------------------------------*/
+
+/* -----------------------------------------------------*/
+/* --------------- END Actualités ----------------------*/
+/* -----------------------------------------------------*/
+
+
+
+/* -----------------------------------------------------*/
+/* ------------------ HEADER ---------------------------*/
+/* -----------------------------------------------------*/
+
+/* -----------------------------------------------------*/
+/* ---------------- END HEADER -------------------------*/
+/* -----------------------------------------------------*/
+
