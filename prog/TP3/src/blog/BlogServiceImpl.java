@@ -51,12 +51,12 @@ public class BlogServiceImpl implements BlogService {
     }
 
     public Publishable getLatestItem() {
-        int ind = -1;
-        Publishable latest = null;
+        if (items.size() == 0)
+            return null;
 
-        for (int i = 0; i < getPublishableItemsCount(); i++) {
-            if ((ind == -1) || 
-                (items.get(i).getPublicationDate() > latest.getPublicationDate()))
+        Publishable latest = items.get(0);
+        for (int i = 1; i < getPublishableItemsCount(); i++) {
+            if (items.get(i).getPublicationDate() > latest.getPublicationDate())
                 latest = items.get(i);
         }
 
@@ -70,8 +70,9 @@ public class BlogServiceImpl implements BlogService {
             if (items.get(i) instanceof Taggable) {
                 Taggable item = (Taggable) items.get(i);
                 
+            for (int ind = 0; ind < tags.length; ind++)
                 for (int tag = 0; tag < item.tagCount(); tag++) {
-                    if (tags.contains(item.getTags().get(tag)))
+                    if (tags[ind].equals(item.getTags().get(tag)))
                         fromTags.add((Publishable) item);
                 }
             }
@@ -81,9 +82,47 @@ public class BlogServiceImpl implements BlogService {
     }
 
     public List<Publishable> findItemsByContent(String[] words) {
+        List<Publishable> fromContent = new ArrayList<Publishable> ();
 
+        for (int i = 0; i < getPublishableItemsCount(); i++) {
+            if (items.get(i) instanceof Message) {
+                Message item = (Message) items.get(i);
+
+                for (int ind = 0; ind < words.length; ind++)
+                    if (item.getContent().contains(words[ind]))
+                        fromContent.add(item);
+            }
+        }
+         
+        return fromContent;
     }
 
-    public List<Publishable> findItemsByTagsOrContent(String[] tags);
-    
+    public List<Publishable> findItemsByTagsOrContent(String[] tags) {
+        List<Publishable> result = new ArrayList<Publishable> ();
+
+        for (int i = 0; i < getPublishableItemsCount(); i++) {
+            if (items.get(i) instanceof Message) {
+                Message item = (Message) items.get(i);
+
+                for (int ind = 0; ind < tags.length; ind++)
+                    if (item.getContent().contains(tags[ind]))
+                    {
+                        result.add(item);
+                        continue;
+                    }
+            }
+
+            if (items.get(i) instanceof Taggable) {
+                Taggable item = (Taggable) items.get(i);
+                  
+                for (int ind = 0; ind < tags.length; ind++)
+                    for (int tag = 0; tag < item.tagCount(); tag++) {
+                        if (tags[ind].equals(item.getTags().get(tag)))
+                        result.add((Publishable) item);
+                    }
+            }
+        }
+
+        return result;
+    }
 }
