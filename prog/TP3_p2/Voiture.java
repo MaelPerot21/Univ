@@ -1,6 +1,5 @@
 public class Voiture extends MoyenDeTransport {
-
-    public void deplacementEnX() {
-        setX(getVitesse());
+    public Voiture() {
+        super(10, 150);
     }
 }

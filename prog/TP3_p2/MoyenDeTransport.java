@@ -2,6 +2,18 @@ public class MoyenDeTransport implements Deplacement{
     private int x, y, vitesse;
     private static int vitesseInitiale = 10;
 
+    public MoyenDeTransport() {
+        x = 0;
+        y = 0;
+        vitesse = vitesseInitiale;
+    }
+
+    public MoyenDeTransport(int vitesse, int limit) {
+        x = 0;
+        y = 0;
+        limitation(vitesse*getVitesseInitiale(), limit);
+    }
+
     public int getX() {
         return x;
     }
@@ -28,15 +40,13 @@ public class MoyenDeTransport implements Deplacement{
         MoyenDeTransport.vitesseInitiale = vitesseInitiale;
     }
 
-    public void deplacementEnX() {}
-    public void deplacementEnY() {}
     public void seDeplacer() {
         deplacementEnX();
         deplacementEnY();
     }
 
     public void afficher() {
-        System.out.println(String.valueOf(x) + "; " + String.valueOf(y));
+        System.out.println("x:" + String.valueOf(x) + " ; y:" + String.valueOf(y));
     }
 
     public void limitation(int new_speed, int limit) {
