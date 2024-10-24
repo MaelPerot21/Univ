@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <title></title>
+    <meta name="description" content="A simple website with some bugs">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <a href="index.html">
+            <img id="logo" src="img/logo.png" alt="Wankiach" width="150">
+        </a>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="about.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+<div class="top">
+    <div class="container">
+        <h1>Nous sommes WANKIACH !</h1>
+        <p>Ne sois pas timide et rejoins-NOUS !!!</p>
+    </div>
+</div>
+<div class="container">
+    <div class="contact-form">
+        <h2>Contactez-nous</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Nom :</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Envoyer</button>
+            </div>
+        </form>
+    </div>
+</div>
+<footer class="text-center">
+    <p>Ce site est protégé ! En cas de copie, nous ne manquerons de vous attaquer !</p>
+</footer>
+<script src="js/app.js"></script>
+<script>
+    // Sélectionner le formulaire de contact
+    const contactForm = document.querySelector('.contact-form form');
+
+    // Ajouter un gestionnaire d'événements pour le clic sur le bouton d'envoi
+    contactForm.addEventListener('submit', function(event) {
+        // Empêcher le comportement par défaut du formulaire
+        event.preventDefault();
+
+        // Désactiver le bouton d'envoi
+        const submitButton = contactForm.querySelector('button[type="submit"]');
+        submitButton.disabled = true;
+        submitButton.innerText = 'Envoi en cours...';
+
+        // Envoi : Afficher une alerte de confirmation après 1 seconde
+        setTimeout(function() {
+            alert('Votre message a été envoyé avec succès !');
+
+            // Récupérer les informations saisies par l'utilisateur
+            const name = contactForm.querySelector('#name').value;
+            const email = contactForm.querySelector('#email').value;
+            const message = contactForm.querySelector('#message').value;
+
+            // Remplacer le formulaire par un résumé des informations saisies
+            contactForm.innerHTML = `
+      <p>Merci pour votre message, ${name} !</p>
+      <p>Nous vous contacterons bientôt à l'adresse ${email}.</p>
+      <p>Voici un résumé de votre message :</p>
+      <p>${message}</p>
+    `;
+        }, 1000);
+    });
+
+</script>
+</body>
+</html>

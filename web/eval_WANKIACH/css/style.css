@@ -1,0 +1,232 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    font-size: 16px;
+    --primary-color: #cf9b8b;
+}
+
+.container {
+    margin: 0 1rem;
+    line-height: 1.4;
+}
+@media (min-width: 1200px) {
+    .container {
+        width: 1200px;
+        margin: 0 auto;
+    }
+}
+.text-center {
+    text-align: center;
+}
+.text-muted {
+    color: #999;
+}
+
+header, footer {
+    background: var(--primary-color);
+    padding: 0;
+    transition: background-color 0.5s ease;
+}
+header.highlight, footer.highlight {
+    background-color: #f0f0f0;
+}
+header .logo {
+    text-align: center;
+}
+header nav {
+    padding: 1rem 0;
+}
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+    height: 46px;
+}
+header nav li {
+    display: flex;
+    align-items: center;
+}
+header nav a {
+    padding: 5px 10px;
+    color: #333333;
+    text-decoration: none;
+}
+header nav a:hover {
+    text-decoration: underline;
+}
+
+.top {
+    background: var(--primary-color);
+    padding: 4rem 0;
+}
+
+.top .container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.top p {
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+    margin: 0;
+}
+
+h1 {
+    font-size: 36px;
+    color: #333;
+    text-align: center;
+    padding-top: 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+#myButton, .btn {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+#myButton:hover {
+    background-color: #666;
+}
+.btn-secondary {
+    background: var(--primary-color);
+    box-shadow: 0 0 5px #999999;
+    transition: box-shadow 0.3s ease-in-out;
+}
+.btn-secondary:hover {
+    box-shadow: 0 0 10px #999999;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+}
+.images img {
+    width: 50%;
+    cursor: pointer;
+}
+@media (min-width: 768px) {
+    .images {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50vw;
+        flex: 0 0 50vw;
+        max-width: 600px;
+    }
+}
+
+.texts {
+    display: flex;
+    gap: 1rem 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.texts > * {
+    width: 100%;
+}
+@media (min-width: 768px) {
+    .texts {
+        flex-shrink: 1;
+    }
+}
+
+
+
+[id=raisons] {
+    display: flex;
+    align-items: center;
+    gap: 2rem 1rem;
+    flex-wrap: wrap;
+}
+[id=raisons] .highlight {
+    background-color: var(--primary-color);
+    transition: background-color 0.5s ease;
+}
+
+
+@media (min-width: 768px) {
+    [id=raisons] {
+        flex-wrap: nowrap;
+        margin-right: 0;
+    }
+}
+@media (min-width: 1200px) {
+    [id=raisons] {
+        margin: 0 auto;
+    }
+}
+
+.action span {
+    line-height: 2rem;
+}
+
+footer {
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 3rem auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: vertical;
+}
+
+.form-group button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: var(--primary-color);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: box-shadow 0.5s ease;
+}
+
+.form-group button:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+
