@@ -1,39 +1,38 @@
 package exo3;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 public class GrapheNonPondere {
-    HashMap<String, String> leGraphe;
+    HashMap<String, ArrayList<String>> leGraphe;
 
     public GrapheNonPondere() {
-        leGraphe = new HashMap<String, String>();
+        leGraphe = new HashMap<String, ArrayList<String>>();
     }
 
     public void ajouterSommet(String s) {
-        leGraphe.put(s, null);
+        leGraphe.put(s, new ArrayList<String>());
     }
     
     public void ajouterChemin(String depart, String arrivee) {
-    	boolean isDepart = false;
-    	boolean isArrivee = false;
-    	for (String s : leGraphe.keySet()) {
-    		if (s.equals(depart))
-    			isDepart = true;
-    		if (s.equals(arrivee))
-    			isArrivee = true;
-    	}
-    	if (!isDepart)
+    	if (!leGraphe.keySet().contains(depart))
     		ajouterSommet(depart);
-    	if (!isArrivee)
+		if (!leGraphe.keySet().contains(arrivee))
     		ajouterSommet(arrivee);
     	
-    	leGraphe.put(depart, arrivee);
+		leGraphe.get(depart).add(arrivee);
     }
     
     public String toString() {
     	String result = new String();
     	for (String s : leGraphe.keySet()) {
-    		result.concat("{"+s+", {"+leGraphe.get(s)+"}}");
+    		result += "{"+s+", {";
+			for (int i = 0; i < leGraphe.get(s).size(); i++) {
+				result += leGraphe.get(s).get(i);
+				if (i != leGraphe.get(s).size() - 1)
+					result += ", ";
+			}
+			result += "}}\n";
     	}
     	return result;
     }
