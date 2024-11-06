@@ -2,8 +2,10 @@ package exo1;
 
 public class Test {
     public static void main(String[] args) {
-        Triplet<Integer> t = new Triplet<Integer>(1,2,3);
+        Triplet<Integer> tI = new Triplet<Integer>(1,2,3);
+        Triplet<String> tS = new Triplet<String>("First","Second","Third");
 
-        t.affiche();
+        tI.affiche();
+        tS.affiche();
     }
 }
