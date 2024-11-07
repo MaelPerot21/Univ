@@ -1,3 +1,0 @@
-function Recrutement() {
-    print("test");
-}
