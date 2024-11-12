@@ -19,7 +19,7 @@
         - Créer un fichier css et js correspondant au composant
     - double cards (différence)
         - Créer un fichier css correspondant au composant
-    - Slider experts
+    - Slider expertsUncaught TypeError: menuBoxRecrute is null
         - Créer un fichier css et js correspondant au composant
     - Slider missions
         - Créer un fichier css et js correspondant au composant
@@ -37,7 +37,6 @@
 <!-- ------------------------------------------------------>
 <!-- ------------------ HEADER ---------------------------->
 <!-- ------------------------------------------------------>
-<script type="te" src="js/global.js"></script>
 
 <div class="header">
     <div id="personal_menu">
@@ -51,16 +50,50 @@
         <a id="logo"></a>
         <div id="top_menu">
             <nav>
-                <button onclick="Recrutement()">Recrutement</a>
-                <a href="#">Interim</a>
-                <a href="#">Performance</a>
-                <a href="#">Transformation</a>
-                <a href="#">A propos</a>
-                <a href="#">Ressources</a>
+                <button class="topMenuButton" id="ButtonRecrut" onclick="Recrutement()">RECRUTEMENT
+                <button class="topMenuButton" onclick="Interim()">INTERIM
+                <button class="topMenuButton" onclick="Performance()">PERFORMANCE
+                <button class="topMenuButton" onclick="Transformation()">TRANSFORMATION
+                <button class="topMenuButton" onclick="A_propos()">A PROPOS
+                <button class="topMenuButton" onclick="Ressources()">RESSOURCES
             </nav>
         </div>
         <a id="search" href="#"></a>
     </div>
+
+    <!-- top menu printings -->
+    <ul id="menu-box-recrute" style="display: none">
+        <li><a href="#">Postes disponibles</a></li>
+        <li><a href="#">Postuler</a></li>
+        <li><a href="#">Plus d'informations</a></li>
+    </ul>
+    <ul id="menu-box-interim" style="display: none">
+        <li><a href="#">S'inscrire</a></li>
+        <li><a href="#">Postes concernes</a></li>
+        <li><a href="#">Plus d'informations</a></li>
+    </ul>
+    <ul id="menu-box-performance" style="display: none">
+        <li><a href="#">Manger</a></li>
+        <li><a href="#">Boire</a></li>
+        <li><a href="#">Dormir</a></li>
+    </ul>
+    <ul id="menu-box-transformation" style="display: none">
+        <li><a href="#">Changer</a></li>
+        <li><a href="#">C'est</a></li>
+        <li><a href="#">facile</a></li>
+    </ul>
+    <ul id="menu-box-a-propos" style="display: none">
+        <li><a href="#">Y'a</a></li>
+        <li><a href="#">des</a></li>
+        <li><a href="#">trucs</a></li>
+    </ul>
+    <ul id="menu-box-ressources" style="display: none">
+        <li><a href="#">Petrole</a></li>
+        <li><a href="#">Charbon</a></li>
+        <li><a href="#">Rubis</a></li>
+    </ul>
+
+    <script src="assets/js/header.js"></script>
 </div>
 <!-- ------------------------------------------------------>
 <!-- ------------------ END HEADER ------------------------>
@@ -158,12 +191,7 @@
     <!---------------------- END Actualités ----------------------->
     <!-- ---------------------------------------------------------->
 
-
-
-<!-- ---------------------------------------------------------->
-<!------------------------ FOOTER ------------------------->
-<!-- ---------------------------------------------------------->
-
+    <a href="#">
 </div> <!-- fermeture de la div id="home" -->
 <footer>
     <div class="container">

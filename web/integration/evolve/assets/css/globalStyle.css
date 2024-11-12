@@ -95,9 +95,76 @@ h2 {
     display: flex;
 }
 
+#menu-box-recrute {
+    /* Layout Properties */
+    top: 181px;
+    left: 5%;
+    width: 91%;
+    height: 610px;
+
+    /* UI Properties */
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+#menu-box-interim {
+    /* Layout Properties */
+    top: 181px;
+    left: 5%;
+    width: 91%;
+    height: 610px;
+
+    /* UI Properties */
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+#menu-box-performance {
+    /* Layout Properties */
+    top: 181px;
+    left: 5%;
+    width: 91%;
+    height: 610px;
+
+    /* UI Properties */
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+#menu-box-transformation {
+    /* Layout Properties */
+    top: 181px;
+    left: 5%;
+    width: 91%;
+    height: 610px;
+
+    /* UI Properties */
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+#menu-box-a-propos {
+    /* Layout Properties */
+    top: 181px;
+    left: 5%;
+    width: 91%;
+    height: 610px;
+
+    /* UI Properties */
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+#menu-box-ressources {
+    /* Layout Properties */
+    top: 181px;
+    left: 5%;
+    width: 91%;
+    height: 610px;
+
+    /* UI Properties */
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    opacity: 1;
+}
+
 #logo {
     position: relative;
-    top: 81px;
+    top: 32px;
     left: 6%;
     width: 67px;
     height: 67px;
@@ -121,16 +188,27 @@ h2 {
     /* Layout Properties */
     position: relative;
     top: 81px;
-    left: 10%;
-    width: 70%;
+    left: 22%;
+    width: 85%;
     height: 90px;
 
     /* UI Properties */
+    background-color: transparent;
+    opacity: 1;
+}
+
+.topMenuButton {
+    border: none;
+    background-color: transparent;
+
+    color: #FFFFFF;
     text-align: center;
     font: normal normal normal 21px/25px Helvetica Neue;
     letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 1;
+}
+
+[class=topMenuButton] .highlight {
+    border: darkblue;
 }
 /* -----------------------------------------------------*/
 /* ---------------- END HEADER -------------------------*/
