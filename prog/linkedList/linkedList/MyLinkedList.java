@@ -156,6 +156,13 @@ public class MyLinkedList<T> implements Ilist<T> {
         if ((index >= size) || (index < 0))
             throw new Exception("IndexOutOfBoundsException");
 
+        Node<T> toChange = head;
+        for (int i = 0; i < index; i++) {
+            toChange = toChange.getNext();
+        }
+
+        toChange.set
+        
         
     }
 
