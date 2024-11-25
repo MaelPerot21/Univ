@@ -1,74 +1,89 @@
 var menuBoxRecrute = document.getElementById('menu-box-recrute');
-var menuBoxInterim = document.getElementById('menu-box-interim');    
-var menuBoxPerformance = document.getElementById('menu-box-performance');    
-var menuBoxTransformation = document.getElementById('menu-box-transformation');    
-var menuBoxAPropos = document.getElementById('menu-box-a-propos');    
+var menuBoxInterim = document.getElementById('menu-box-interim');
+var menuBoxPerformance = document.getElementById('menu-box-performance');
+var menuBoxTransformation = document.getElementById('menu-box-transformation');
+var menuBoxAPropos = document.getElementById('menu-box-a-propos');
 var menuBoxRessources = document.getElementById('menu-box-ressources');
 
-function annihilation(menu) {
+function resetAndPrint(menu, menuButton) {
     menuBoxRecrute.style.display = "none";
     menuBoxPerformance.style.display = "none";
     menuBoxInterim.style.display = "none";
     menuBoxTransformation.style.display = "none";
     menuBoxAPropos.style.display = "none";
     menuBoxRessources.style.display = "none";
+    var buttons = document.getElementsByClassName("topMenuButton");
+    for (var i = 0; i<buttons.length; i++) {
+        buttons[i].style["border"] = 'none';
+    }
 
+    menuButton.style.border = '5px solid darkblue';
     menu.style.display = "block";
+    document.getElementById('topMenu-box').style.background = 'white';
+}
 
+function hide(menu, menuButton) {
+    menuButton.style.border = 'none';
+    menu.style.display = "none";
+    document.getElementById('topMenu-box').style.background = 'transparent';
 }
 
 function Recrutement() {
     var menuButton = document.getElementById('ButtonRecrut');
     if(menuBoxRecrute.style.display == "block") { // if is menuBox displayed, hide it
-        menuBoxRecrute.style.display = "none";
+        hide(menuBoxRecrute, menuButton);
     }
     else { // if is menuBox hidden, display it
-        menuButton.classList.add('highlight');
-        annihilation(menuBoxRecrute);
+        resetAndPrint(menuBoxRecrute, menuButton);
     }
 }
 
 function Interim() {
+    var menuButton = document.getElementById('ButtonInterim');
     if(menuBoxInterim.style.display == "block") { // if is menuBox displayed, hide it
-        menuBoxInterim.style.display = "none";
+        hide(menuBoxInterim, menuButton);
     }
     else { // if is menuBox hidden, display it
-        annihilation(menuBoxInterim);    
+        resetAndPrint(menuBoxInterim, menuButton);
     }
 }
 
 function Performance() {
+    var menuButton = document.getElementById('ButtonPerfo');
     if(menuBoxPerformance.style.display == "block") { // if is menuBox displayed, hide it
-        menuBoxPerformance.style.display = "none";
+        hide(menuBoxPerformance, menuButton);
     }
     else { // if is menuBox hidden, display it
-        annihilation(menuBoxPerformance);    
+        resetAndPrint(menuBoxPerformance, menuButton);
     }
 }
 
 function Transformation() {
+    var menuButton = document.getElementById('ButtonTransfo');
     if(menuBoxTransformation.style.display == "block") { // if is menuBox displayed, hide it
-        menuBoxTransformation.style.display = "none";
+        hide(menuBoxTransformation, menuButton);
     }
     else { // if is menuBox hidden, display it
-        annihilation(menuBoxTransformation);    
+        resetAndPrint(menuBoxTransformation, menuButton);
     }
 }
 
 function A_propos() {
+    var menuButton = document.getElementById('ButtonAP');
     if(menuBoxAPropos.style.display == "block") { // if is menuBox displayed, hide it
-        menuBoxAPropos.style.display = "none";
+        hide(menuBoxAPropos, menuButton);
     }
     else { // if is menuBox hidden, display it
-        annihilation(menuBoxAPropos);    
+        resetAndPrint(menuBoxAPropos, menuButton);
     }
 }
 
 function Ressources() {
+    var menuButton = document.getElementById('ButtonRess');
     if(menuBoxRessources.style.display == "block") { // if is menuBox displayed, hide it
-        menuBoxRessources.style.display = "none";
+        hide(menuBoxRessources, menuButton);
     }
     else { // if is menuBox hidden, display it
-        annihilation(menuBoxRessources);
+        resetAndPrint(menuBoxRessources, menuButton);
     }
 }
