@@ -1,7 +1,7 @@
-package swing;
+package ex2;
 
 public class test {
 	public static void main(String args[]) {
-		FenGridBouton fen = new FenGridBouton();
+		new FenGridBouton();
 	}
 }
