@@ -41,9 +41,9 @@
 <div class="header">
     <div id="personal_menu">
         <nav>
-            <a href="">Espace candidat</a>
-            <a href="">Aide & contact</a>
-            <a href="" >Fr</a>
+            <a class="topLinks" href="">Espace candidat</a>
+            <a class="topLinks" href="">Aide & contact</a>
+            <a class="language" href="" ></a>
         </nav>
     </div>
     <div class="container_top_menu">
@@ -101,9 +101,20 @@
       </ul>
     </div>
 
+    <div id="botMainMenu">
+        <button class="botMenuButton" id="bgButtonRecrut"
+                onclick="Recrutement()">RECRUTEMENT
+          <button class="botMenuButton" id="bgButtonInterim"
+                  onclick="Interim()">INTERIM
+            <button class="botMenuButton" id="bgButtonPerfo"
+                    onclick="Performance()">PERFORMANCE
+              <button class="botMenuButton" id="bgButtonTransfo"
+                      onclick="Transformation()">TRANSFORMATION
+    </div>
+
     <script src="assets/js/header.js"></script>
-</div>
-<!-- ------------------------------------------------------>
+    </div>
+    <!-- ------------------------------------------------------>
 <!-- ------------------ END HEADER ------------------------>
 <!-- ------------------------------------------------------>
 
@@ -117,8 +128,8 @@
     <!-- ------------------ SLIDER 1 -------------------------->
     <!-- ------------------------------------------------------>
     <header>
-        <div id="home-slider">
-        </div>
+      <div id="homeSlider">
+      </div>
     </header>
     <!-- ------------------------------------------------------>
     <!-- ------------------ END SLIDER 1 ---------------------->

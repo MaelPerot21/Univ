@@ -70,12 +70,26 @@ h2 {
     top: 26px;
     left: 1%;
     width: 97%;
-    height: 1021px;
+    height: 933px;
 
     /* UI Properties */
-    background: transparent url('../img/background1.png') 0% 0% no-repeat padding-box;
+    background: transparent url('../img/background1.png') 0% 0% round padding-box;
     background-size: contain;
     opacity: 1;
+}
+
+.topLinks {
+    display: inline-block;
+    text-align: right;
+    width: 38%;
+}
+
+.language {
+    display: inline-block;
+    text-align: right;
+    width: 19%;
+    background-image: url("../img/france.png");
+    background-size: contain;
 }
 
 #personal_menu {
@@ -151,6 +165,31 @@ h2 {
     color: #FFFFFF;
     text-align: center;
     font: normal normal normal 21px/25px Helvetica Neue;
+    letter-spacing: 0px;
+}
+
+#botMainMenu {
+    /* Layout Properties */
+    position: relative;
+    top: 94px;
+    left: 0%;
+    width: 50%;
+    height: 150px;
+
+    /* UI Properties */
+    display: inline-block;
+    background-color: transparent;
+    opacity: 1;
+}
+
+.botMenuButton {
+    border: none;
+    background-color: #FFFFFF;
+
+    color: black;
+    text-align: center;
+    font: normal normal normal 0.7vw/150px ZonaPro-SemiBold;
+    width: 25%;
     letter-spacing: 0px;
 }
 

@@ -1,8 +1,9 @@
-#home-slider {
+#homeSlider {
     /* Layout Properties */
+    position: relative;
     top: 19px;
-    left: 20px;
-    width: 1326px;
+    left: 1%;
+    width: 90%;
     height: 749px;
 
     /* UI Properties */
