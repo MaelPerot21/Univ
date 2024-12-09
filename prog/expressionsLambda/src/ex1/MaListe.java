@@ -20,7 +20,8 @@ public class MaListe {
 	
 	public void afficher(Function<Coord, String> f) {
 		for (Coord c : list) {
-			f.apply(c);
+			System.out.println(f.apply(c));
 		}
+		Main.printNumber = 0;
 	}
 }
