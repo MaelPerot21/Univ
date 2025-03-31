@@ -53,11 +53,11 @@ void thousandSumWithPipe() {
         int tube[10][2];
         pipe(tube[i]);
         dup2(0, tube[i][0]);
+        int sum = total;
 
         int fils = fork();
         if (!fils) {
             dup2(1, tube[i][1]);
-            int sum = total;
             for (int k = i * 100; k < i * 100 + 100; k++) {
                 sum += k;
             }
@@ -65,7 +65,7 @@ void thousandSumWithPipe() {
             exit(0);
         }
 
-        read(tube[i][1], &total, 4);
+        read(tube[i][1], &total, sizeof(sum));
     }
     printf("total : %d\n", total);
 }

@@ -1,7 +1,7 @@
 CC=gcc
-CFLAGS=-std=c99 -Wall -Wextra -Werror -pedantic -Wvla
+CFLAGS=-std=c99 -Wall -Wextra -Werror -pedantic
 
-OBJ=tp5.o
+OBJ=tp6.o
 
 test: $(OBJ)
 	$(CC) -o $@ $^
