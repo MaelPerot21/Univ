@@ -1,11 +1,11 @@
 CC=gcc
 CFLAGS=-std=c99 -Wall -Wextra -Werror -pedantic -Wvla
 
-OBJ=prog2.o
+OBJ=tp5.o
 
 test: $(OBJ)
-	$(CC) -o $@ prog2
-	./$@ abcabcabc
+	$(CC) -o $@ $^
+	./$@
 
 leak: CFLAGS +=-g
 leak: $(OBJ)
