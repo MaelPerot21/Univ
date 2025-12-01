@@ -1,0 +1,15 @@
+package tla;
+
+public enum TypeDeToken {
+	add,
+	multiply,
+	leftPar,
+	rightPar,
+	comma,
+	assign,
+	equal,
+	logicalNeg,
+	notEqual,
+	intv,
+	ident
+}
