@@ -1,0 +1,32 @@
+[
+    {
+        "ID": 1,
+        "Nom": "Alice Dupont",
+        "Email": "alice.dupont@example.com",
+        "Date d'inscription": "2023-06-15"
+    },
+    {
+        "ID": 2,
+        "Nom": "Bob Martin",
+        "Email": "bob.martin@example.com",
+        "Date d'inscription": "2022-09-22"
+    },
+    {
+        "ID": 3,
+        "Nom": "Charlie Durand",
+        "Email": "charlie.durand@example.com",
+        "Date d'inscription": "2024-01-10"
+    },
+    {
+        "ID": 4,
+        "Nom": "David Bernard",
+        "Email": "david.bernard@example.com",
+        "Date d'inscription": "2021-11-30"
+    },
+    {
+        "ID": 5,
+        "Nom": "Emma Leclerc",
+        "Email": "emma.leclerc@example.com",
+        "Date d'inscription": "2023-03-05"
+    }
+]
